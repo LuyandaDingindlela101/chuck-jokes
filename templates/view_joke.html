@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Shopping list</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='view_joke.css') }}">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Chuck Norris</h1>
+            <img src="{{ joke_details['icon_url'] }}" alt="">
+            <h2>Updated at: <a href="{{ joke_details['updated_at'] }}">here</a></h2>
+            <h3>Found at: {{ joke_details['url'] }}</h3>
+            <p>{{ joke_details['value'] }}</p>
+        </div>
+    </body>
+</html>
